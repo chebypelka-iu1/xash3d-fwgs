@@ -956,6 +956,9 @@ R_SetupRefParams must be called right before
 */
 void R_RenderScene( void )
 {
+	// --- ТЕСТ ЧИТА START ---
+    Con_Printf("!!! MY CHEAT BUILD IS RUNNING !!!\n");
+    // --- ТЕСТ ЧИТА END ---
 	if( !WORLDMODEL && FBitSet( RI.rvp.flags, RF_DRAW_WORLD ))
 		gEngfuncs.Host_Error( "%s: NULL worldmodel\n", __func__ );
 
